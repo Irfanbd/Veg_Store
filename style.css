@@ -140,6 +140,12 @@ transition: 1s;
   align-items: center;
   background: #1D212B;
 }
+@media screen and (max-width: 768px) {
+  .body-slider  {
+      margin-top: 2200px;
+      flex-direction: column;
+  }
+}
 .img-slider{
   position: relative;
   width: 800px;
