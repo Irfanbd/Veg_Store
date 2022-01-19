@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Main-Container{
+    height: 100vh;
+    background: url(image/bg.jpg)
+}
