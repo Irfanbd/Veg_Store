@@ -1,8 +1,131 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@0,200;0,700;1,100;1,300;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@1,700&family=Titillium+Web:wght@300;400;600;700&display=swap');
+
 .Main-Container{
     height: 100vh;
-    background: url(image/bg.jpg)
+    background: url(image/bg.jpg);
+    display: flex;
+    background-size:cover ;
+}
+.Main-Container .navbar{
+    background: linear-gradient(191deg, rgba(161,251,0,1) 0%, rgba(108,211,241,1) 47%, rgba(249,229,229,1) 100%);
+    flex-direction: row;
+    margin-top: 20%;
+    padding: 30px 20px ;
+    width: 7%;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+}
+.navbar ul li{
+    flex-direction: row;
+    display: flex;
+    color: orangered;
+    font-size: 30px;
+    list-style: none;
+    padding: 10px ;
+    font-weight: 800;
+    font-family: dancing script;
+}
+.navbar ul li:hover{
+color: black;
+padding: 3px 2px;
+transition: 1s;
+}
+
+.veg-title{
+    height: 100px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,90%);
+}
+.veg-title h1{
+    font-size: 42px;
+    font-weight: 800;
+    color: red;
+    
+}
+/**Topic Section */
+.topic{
+    height: 600px;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.topic-box{
+    flex:1;
+    width: 19%;
+    height: 600px;
+    padding: 10px;
+    margin: 0px 10px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.topic-box img{
+    height: 60%;
+    width: 80%;
+    margin: 0 auto;
+   
+     display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+    transition: .5s;
+}
+.topic-box img:hover{
+    box-shadow: 5px 5px 5px coral;
+}
+.topic-box h1{
+    margin-top: 20px;
+    font-family: cursive;
+    color: coral;
+}
+.topic-box p{
+    text-align: center;
+    margin-top: 30px;
+    color: darkgoldenrod;
+    font-weight: 600;
+}
+.menu-title{
+    
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.menu-title h1{
+    font-size: 45px;
+    border: 2px solid gray;
+    padding:10px 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    .topic  {
+        
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .topic-box  {
+        width: 80%;
+        flex-direction: column;
+    }
 }
